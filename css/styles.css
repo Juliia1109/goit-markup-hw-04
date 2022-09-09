@@ -20,6 +20,8 @@
 
 /* вторинний колір фону #F5F4FA */
 
+/* вторинний колір фонового зображення #C4C4C4 */
+
 
 :root {
     --primary-text-color: #757575;
@@ -32,6 +34,7 @@
     --primary-lightwhite-color: #eeeeee;
     --primary-whitegrey-color: #ececec;
     --primary-transparent-color: rgba(255, 255, 255, 0.6);  
+    --primary-background-color: #C4C4C4;
     --primary-secondary-color: #f5f4fa;
 }
 
@@ -75,7 +78,7 @@ img {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 
 
@@ -197,6 +200,8 @@ img {
     color: var(--accent-color);
 }
 
+/* overlay */
+
 
 /* header */
 
@@ -207,7 +212,14 @@ img {
 .header {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--primary-lightblack-color);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primary-background-color);
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/Img17.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header-title {
