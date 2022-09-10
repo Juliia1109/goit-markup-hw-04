@@ -18,6 +18,8 @@
 
 /* акцент #2196f3 */
 
+/* колір мережі #AFB1B8 */
+
 /* вторинний колір фону #F5F4FA */
 
 /* вторинний колір фонового зображення #C4C4C4 */
@@ -34,6 +36,7 @@
     --primary-lightwhite-color: #eeeeee;
     --primary-whitegrey-color: #ececec;
     --primary-transparent-color: rgba(255, 255, 255, 0.6);  
+    --primary-link-color: #AFB1B8;
     --primary-background-color: #C4C4C4;
     --primary-secondary-color: #f5f4fa;
 }
@@ -154,7 +157,7 @@ img {
 
 
 .mailto-tel .contact-link {
-    display: block;
+    
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -170,7 +173,11 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    display: flex;
+    gap: 10px;
 }
+
+
 
 .contacts-list .contact-link:hover,
 .contacts-list .contact-link:focus {
@@ -200,7 +207,6 @@ img {
     color: var(--accent-color);
 }
 
-/* overlay */
 
 
 /* header */
@@ -327,14 +333,72 @@ img {
     text-align: center;
 }
 
+.item-icon {
+  fill: currentColor;
+}
+
+.list-icon {
+    width: 44px;
+    height: 44px;
+}
+
+
+.content-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-link {
+    width: 100%;
+    height: 100%; 
+    color: var(--primary-link-color);
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+}
+
+.list-link:hover,
+.list-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);  
+}
+
 .gallery-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }
 
-.feature-list-title {
+
+
+.feature-icon {
+width: 70px;
+height: 70px;
+}
+
+.aside {
+    display: flex;
+    gap: 30px;
+}
+
+.aside-list {
+    width: 170px;
+    height: 92px;
+    margin-bottom: 50px;
+    outline: 2px solid var(--primary-link-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon {
     width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--primary-secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-list {
