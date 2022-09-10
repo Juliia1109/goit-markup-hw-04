@@ -104,7 +104,7 @@ img {
 
 .site-nav {
     display: flex;
-    /* margin-left: 93px; */
+ 
 }
 
 
@@ -149,6 +149,17 @@ img {
     align-items: center;   
 }
 
+.list-contact {
+fill: currentColor;
+}
+.contact-link:hover, .contact-link:focus {
+    color: var(--accent-color);
+}
+
+/* .contact-link.list-contact:not(:last-child) {
+    margin-right: 10px;
+   
+} */
 
 .mailto-tel .list-mailto-tel:not(:last-child) {
     margin-right: 50px;
@@ -175,7 +186,9 @@ img {
     line-height: 1.14;
     display: flex;
     gap: 10px;
+    align-items: center;
 }
+
 
 
 
@@ -373,33 +386,63 @@ img {
 .feature-icon {
 width: 70px;
 height: 70px;
+fill: var(--title-text-color);
 }
 
 .aside {
     display: flex;
     gap: 30px;
+    margin-bottom: -94px;
 }
 
 .aside-list {
     width: 170px;
     height: 92px;
     margin-bottom: 50px;
-    outline: 2px solid var(--primary-link-color);
+    border: 2px solid var(--primary-link-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.aside-icon {
+    fill: var(--primary-link-color);
+    width: 106px;
+    height: 60px;
+}
 
 .icon {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--primary-secondary-color);
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.aside .aside-list:focus,
+.aside .aside-list:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.aside .aside-list:focus,
+.aside .aside-list:hover {
+    fill: var(--accent-color);
+}
+
+.contact-link:focus,
+.contact-link:hover {
+border: 1px solid var(--accent-color);   
+
+}
+
+.aside-link:focus .aside-icon,
+.aside-link:hover .aside-icon {
+     fill: var(--accent-color);
+}
+
 
 .work-list {
     display: flex;
@@ -454,6 +497,39 @@ margin: -15px;
 .contacts-link {
     margin-bottom: 9px;
 }
+
+.container-icon-desc {
+font-size: 14px;
+line-height: 16px;
+color: var(--primary-white-color);
+margin-bottom: 20px ;
+}
+
+.container-footer {
+    display: flex;
+}
+
+.container-icon {
+    width: 206px;
+    height: 80px;
+    display: flex;
+}
+
+.container-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon-link {
+    fill: var(--primary-white-color);
+}
+
+.container-icon-link {
+    width: 44px;
+    height: 44px;
+}
+
 
 /* button */
 
