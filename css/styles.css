@@ -10,6 +10,8 @@
 
 /* прозорий rgba(255, 255, 255, 0.6) */
 
+/* сірий rgba(255, 255, 255, 0.1) */
+
 /* світлобілий #EEEEEE */
 
 /* білосірий #ececec */
@@ -36,6 +38,7 @@
     --primary-lightwhite-color: #eeeeee;
     --primary-whitegrey-color: #ececec;
     --primary-transparent-color: rgba(255, 255, 255, 0.6);  
+    --primary-grey-color:  rgba(255, 255, 255, 0.1);
     --primary-link-color: #AFB1B8;
     --primary-background-color: #C4C4C4;
     --primary-secondary-color: #f5f4fa;
@@ -152,14 +155,12 @@ img {
 .list-contact {
 fill: currentColor;
 }
-.contact-link:hover, .contact-link:focus {
+
+.contact-link:hover, 
+.contact-link:focus {
     color: var(--accent-color);
 }
 
-/* .contact-link.list-contact:not(:last-child) {
-    margin-right: 10px;
-   
-} */
 
 .mailto-tel .list-mailto-tel:not(:last-child) {
     margin-right: 50px;
@@ -168,7 +169,6 @@ fill: currentColor;
 
 
 .mailto-tel .contact-link {
-    
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -189,13 +189,6 @@ fill: currentColor;
     align-items: center;
 }
 
-
-
-
-.contacts-list .contact-link:hover,
-.contacts-list .contact-link:focus {
-    color: var(--accent-color);
-}
 
 .items-link {
     color: var(--primary-white-color);
@@ -313,8 +306,6 @@ fill: currentColor;
     width: 370px;
     margin: 15px;
     border: 1px solid #EEEEEE;
-    /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); */
-
  }
 
 
@@ -355,32 +346,40 @@ fill: currentColor;
 }
 
 .item-icon {
-  fill: currentColor;
+ fill: var(--primary-link-color);
 }
 
 .list-icon {
-    width: 44px;
-    height: 44px;
+    margin-right: 10px;
 }
 
 
 .content-icon {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 206px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .list-link {
-    width: 100%;
-    height: 100%; 
-    color: var(--primary-link-color);
-    background-color: var(--primary-white-color);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
 }
 
 .list-link:hover,
 .list-link:focus {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);  
+}
+
+
+.list-link:hover .item-icon,
+.list-link:focus .item-icon {
+   fill: var(--primary-white-color); 
 }
 
 .gallery-text {
@@ -447,11 +446,6 @@ fill: var(--title-text-color);
      fill: var(--accent-color);
 }
 
-.contact-link:focus,
-.contact-link:hover {
-border: 1px solid var(--accent-color);   
-}
-
 
 .work-list {
     display: flex;
@@ -512,8 +506,6 @@ font-size: 14px;
 line-height: 16px;
 color: var(--primary-white-color);
 margin-bottom: 20px ;
-width: 116px;
-height: 16px;
 }
 
 .container-footer {
@@ -523,20 +515,16 @@ height: 16px;
 .container-icon {
     width: 206px;
     height: 80px;
-    display: flex;
+    margin-left: 70px;
 }
 
 .container-item {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 206px;
-    height: 44px;
-    margin: auto;
+    justify-content: center;
 }
 
 .container-item-list {
-
+    margin-right: 10px;
 }
 
 .icon-link {
@@ -546,7 +534,18 @@ height: 16px;
 .container-icon-link {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+    background: var(--primary-grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.container-icon-link:hover,
+.container-icon-link:focus {
+    background-color: var(--accent-color);
+}
+
 
 
 /* button */
@@ -588,6 +587,11 @@ height: 16px;
     margin-left: 8px;
 }
 
+.filter-buttons .filter-item:hover,
+.filter-buttons .filter-item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .filter-button {
     border: none;
     border-radius: 4px;
@@ -604,5 +608,10 @@ height: 16px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     cursor: pointer;
+}
+
+.filter-item .filter-button:hover,
+.filter-item .filter-button:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
